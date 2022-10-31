@@ -1,0 +1,142 @@
+
+:root{
+    --dark-color:#252B42;
+    --disabled-color:#737373;
+    --primary-color:#00A0C1;
+    --warn-color:#FFA62B;
+    --light-color:#fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    background: none;
+}
+ul{
+    margin-left:0 ;
+    margin-right: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*UNIQUE*/
+.container{
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify_between{
+    justify-content: space-between;
+}
+.section__btn{
+    padding: 10px 35px;
+    border-radius: 37px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+
+}
+
+/*UNIQUE*/
+/* header */
+.header{
+    position: absolute;
+    top: 36px;
+    width: 100%;
+}
+.header__logo{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    margin-right: 117px;
+}
+.header__link{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--disabled-color);
+}
+.header__link:not(:last-child){
+    margin-right: 21px;
+}
+    
+/* hero section */
+.hero{
+    height: 100vh;
+    padding-top:184px ;
+    background:url(/assets/img/cover.jpg) #fff no-repeat center/cover;
+}
+.hero__title{
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: var(--dark-color);
+    max-width: 509px;
+}
+.hero__desc{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: var(--disabled-color);
+    margin: 35px 0;
+    max-width: 378px;
+}
+.hero .hero__btn_filled{
+    margin-right: 10px;
+}
+.hero__btn_filled{
+    background: var(--warn-color);
+    color: var(--light-color);
+    border: 1px solid var(--warn-color);
+}
+.hero__btn_hollow{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* hero section */
+/* features section */
+.svg{
+    margin-bottom: 13px;
+}
+.card__text{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    
+
+}
+.hero__card{
+    padding: 39px 75px;
+    background: #fff;
+    box-shadow: 0px 13px;
+}
+.hero__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.features{
+    padding: 211px 0 88px;
+}
+
+/* features section */
